@@ -28,9 +28,92 @@
     <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/pe-icons.css" rel="stylesheet">
 
+    <!-- jQuery -->
+    <script src="assets/js/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+       'use strict';
+
+        jQuery('#headerwrap').backstretch([
+          "assets/img/bg/bg1.jpg",
+          "assets/img/bg/bg2.jpg",
+          "assets/img/bg/bg3.jpg"
+        ], {duration: 8000, fade: 500});
+
+    });
+    </script>
+
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="side-nav-active index">
+
+    <button type="button" id="side-menu-toggle" class="visible-xs">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars"></i>
+    </button>
+
+    <div id="side-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-shrink bounceInDown" data-wow-delay="2s">
+
+            <div class="navbar-header clearfix page-scroll">
+                 <a class="navbar-brand smoothie" href="index.html">GRACE</a>
+            </div>
+
+            <div class="side-menu">
+                <ul class="nav">
+                    <li>
+                        <a href="#">Home <span class="pe-7s-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="index.html">Home Fullscreen Slider</a></li>
+                            <li><a href="index-video.html">Home Fullscreen Video</a></li>
+                            <li><a href="index-magazine.html">Home Magazine</a></li>
+                            <li><a href="index-shop.html">Home Shop</a></li>
+                            <li><a href="index-countdown.html">Home Countdown</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio <span class="pe-7s-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
+                            <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
+                            <li><a href="single-portfolio.html">Project Slider</a></li>
+                            <li><a href="single-portfolio-carousel.html">Project Carousel</a></li>
+                            <li><a href="single-portfolio-video.html">Project Video</a></li>
+                            <li><a href="single-portfolio-fullscreen.html">Project Fullscreen</a></li>
+                            <li><a href="single-portfolio-fullscreen-video.html">Project Fullscreen Video</a></li>
+                            <li><a href="single-portfolio-image-list.html">Project Image List</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Blog <span class="pe-7s-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="blog.html">Blog Archive</a></li>
+                            <li><a href="single-post.html">Single Post</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Shop <span class="pe-7s-angle-down"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="index-shop.html">Home Shop</a></li>
+                            <li><a href="single-product.html">Single Product</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#search"><i class="pe-7s-search"></i></a></li>                   
+                </ul>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
 
     <div class="master-wrapper">
 
@@ -40,73 +123,10 @@
             </div>
         </div>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.5s">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header page-scroll">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand smoothie" href="index.html">GRACE</a>
-                </div>
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="main-navigation">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Home <span class="pe-7s-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="index.html">Home Fullscreen Slider</a></li>
-                                <li><a href="index-video.html">Home Fullscreen Video</a></li>
-                                <li><a href="index-magazine.html">Home Magazine</a></li>
-                                <li><a href="index-shop.html">Home Shop</a></li>
-                                <li><a href="index-countdown.html">Home Countdown</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Portfolio <span class="pe-7s-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-                                <li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
-                                <li><a href="single-portfolio.html">Project Slider</a></li>
-                                <li><a href="single-portfolio-carousel.html">Project Carousel</a></li>
-                                <li><a href="single-portfolio-video.html">Project Video</a></li>
-                                <li><a href="single-portfolio-fullscreen.html">Project Fullscreen</a></li>
-                                <li><a href="single-portfolio-fullscreen-video.html">Project Fullscreen Video</a></li>
-                                <li><a href="single-portfolio-image-list.html">Project Image List</a></li>
-
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Blog <span class="pe-7s-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="blog.html">Blog Archive</a></li>
-                                <li><a href="single-post.html">Single Post</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Shop <span class="pe-7s-angle-down"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="index-shop.html">Home Shop</a></li>
-                                <li><a href="single-product.html">Single Product</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#search"><i class="pe-7s-search"></i></a></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-
         <div id="search-wrapper">
             <button type="button" class="close">×</button>
             <form>
-                <input type="search" value="" placeholder="Enter Search Term" />
+                <input type="search" value="" placeholder="type keyword(s) here" />
                 <button type="submit" class="btn btn-primary">Search</button>
             </form>
         </div>
@@ -116,7 +136,7 @@
             <div class="container vertical-center">
                 <div class="intro-text vertical-center text-center smoothie">
                     
-                    <div class="intro-heading wow fadeIn heading-font" data-wow-delay="0.4s">We Are <span class="rotate">Grace, Power, Style</span></div>
+                    <div class="intro-heading wow fadeIn heading-font" data-wow-delay="0.8s">We Are <span class="rotate">Grace, Power, Style</span></div>
                     <a href="#welcome" class="mouse page-scroll"><div class="wheel"></div></a>
                 </div>
             </div>
@@ -252,7 +272,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <ul class="owl-carousel-paged testimonial-owl wow fadeIn list-unstyled" data-items="1" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
+                            <ul class="owl-carousel-paged testimonial-owl wow fadeInUp list-unstyled" data-items="1" data-items-tablet="[768,1]" data-items-mobile="[479,1]">
                                 <li>
                                     <div class="row">
                                         <div class="col-xs-10 col-xs-offset-1 item-caption text-center">
@@ -281,7 +301,6 @@
                 </div>
             </div>
         </section>
-        <div class="tlinks">Collect from <a href="http://www.cssmoban.com/"  title="网站模板">网站模板</a></div>
 
         <section>
             <div class="section-inner nopaddingbottom">
@@ -432,7 +451,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12">
-                                <ul class="owl-carousel-paged testimonial-owl wow fadeIn list-unstyled" data-items="3" data-items-tablet="[768,2]" data-items-mobile="[479,1]">
+                                <ul class="owl-carousel-paged testimonial-owl wow fadeInUp list-unstyled" data-items="3" data-items-tablet="[768,2]" data-items-mobile="[479,1]">
                                     <li>
                                         <div class="row hover-item">
                                             <div class="col-xs-12">
@@ -610,7 +629,7 @@
                     </div>
                 </div>
 
-                <ul class="owl-carousel fw-carousel wow fadeIn list-unstyled" data-items="3" data-items-tablet="[768,2]"  data-items-mobile="[479,1]">
+                <ul class="owl-carousel fw-carousel wow fadeInUp list-unstyled" data-items="3" data-items-tablet="[768,2]"  data-items-mobile="[479,1]">
                     <li class="nopadding-lr hover-item">
                         <img src="assets/img/news/3.jpg" class="img-responsive smoothie wow fadeIn" data-wow-delay="0.5s" alt="">
                         <div class="overlay-item-caption smoothie wow fadeIn" data-wow-delay="0.5s">
@@ -774,7 +793,7 @@
                 </div>
                 
                 <div role="tabpanel" class="tab-pane fade" id="contact2">
-                	map              
+                	                
                 </div>
                 
             </div>      
@@ -876,29 +895,19 @@
 
     </div>
 
-    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script type="text/javascript" src=""></script>
-    <script src="assets/js/init.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script type="text/javascript">
-    $(document).ready(function(){
-       'use strict';
-        jQuery('#headerwrap').backstretch([
-          "assets/img/bg/bg1.jpg",
-          "assets/img/bg/bg2.jpg",
-          "assets/img/bg/bg3.jpg"
-        ], {duration: 8000, fade: 500});
-    });
-    </script>
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Plugins -->
+    <script type="text/javascript" src=""></script>
+    <script src="assets/js/jqBootstrapValidation.js"></script>
+    <script src="assets/js/contact_me.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/init.js"></script>
 
 </body>
 

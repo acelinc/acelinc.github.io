@@ -28,11 +28,6 @@ body {
     text-transform: none;
 }
 
-.ace-font {
-    font-family: 'florenzioconditalic', "florenzioconditalic", Helvetica, Arial, sans-serif;
-    text-transform: none;
-}
-
 .text-muted {
     color: #444
 }
@@ -208,8 +203,7 @@ body {
     -moz-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-	color: #FFFFFF
+    transition: all .5s ease-in-out
 }
 
 .col-md-5th {
@@ -217,12 +211,12 @@ body {
 }
 
 .thin-hr {
-    margin: 30px 0 40px;
+    margin: 30px 1 40px;
     width: 100%;
     clear: both;
     display: block;
     position: relative;
-    border: none;
+    border: #000000
 }
 
 .thin-hr.bordered {
@@ -578,8 +572,7 @@ header .intro-text .intro-heading {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 300;
-    line-height: 30px;
-	color: #FFFFFF;
+    line-height: 30px
 }
 
 /*-----------------------------------------------------------------------------------*/
