@@ -619,7 +619,7 @@ section {
 }
 
 .section-inner {
-    padding: 120px 0
+    padding: 60px 0
 }
 
 section h2.section-heading, .section-heading {
@@ -714,7 +714,7 @@ section h3.section-subheading {
 .blog-item .post-title,
 .project-item .post-title {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .meta-item {
@@ -1444,7 +1444,7 @@ footer.white-wrapper .social-links li a {
 @media(max-width:768px) {
     .fullheight, .fullheight .article-slide, .fullheight .article-slide .carousel-inner, .fullheight .article-slide .item, .fullheight .article-slide .item img {
         height: auto!important;
-        min-height: 600px
+        min-height: 500px
     }
     .icon-tabs .fa-4x {
           font-size: 46px;
@@ -1464,7 +1464,7 @@ footer.white-wrapper .social-links li a {
 @media(max-width:460px) {
     .fullheight, .fullheight .article-slide, .fullheight .article-slide .carousel-inner, .fullheight .article-slide .item, .fullheight .article-slide .item img {
         height: auto!important;
-        min-height: 400px
+        min-height: 300px
     }
 }
 
